@@ -39,13 +39,6 @@ It will produce a formatted output
   - va_copy (man 3 va_copy)
   - va_arg (man 3 va_arg)
 ### File Descriptions
-**print.c:** The print.c file contains the function prototype **int _printf(const char *format, ...)** while format is the string passed in to _printf. This function will return the number of characters (excluding the terminating null bite) to the standard output stream.
-
-**int.c:** This file contains function prototypes **int printInt(va_list i)** which converts an int argument to signed decimal notation.
-
-**strings.c:** This file containts the function prototype **int printstring(va_list c)** which takes an int argument and converts it to a char, and the resulting character is written. Function prototype int printstring(va_list s) is also in this file and it a __const char *__ argument is expected to be a pointer to an array of character type (pointer to a string. Characters from the array are written up to (but not including) a terminating null byte.
-
-**_putchar.c:** This file contains the function prototype **int _putchar(char c)** that writes a character specified by its argument to stdout.
 
 **main.h:** This is a header file that contains all function prototypes used for this assignment.
 ### Authors
