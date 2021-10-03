@@ -1,26 +1,22 @@
-#ifndef __MAINH__
-#define __MAINH__
+#ifndef HEADER_MAIN
+#define HEADER_MAIN
 #include <stdarg.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <limits.h>
-/**
- * struct print - printf functionparameters
- * @a: conversion specifier to match
- * @f: function to return
- *
- */
-typedef struct print
-{
-	char *a;
-	int (*f)(va_list);
-} _types;
-
-int putPercent(char s, char n);
-int printInt(va_list i);
-int printstring(va_list s);
-int printchar(va_list c);
-int _printf(const char *format, ...);
 int _putchar(char c);
+void _puts(char *str);
+int _strlen(char *s);
+int _printf(const char *format, ...);
+char *convert_to(char representation[], unsigned int num, int base);
+int function_manager(char c, va_list arg);
+int _switch(char c, va_list arg);
+int print_character(va_list arg);
+int print_sign(va_list arg, int base);
+int print_unsign(va_list arg, int base);
+int print_string(va_list arg);
+int print_ptr(va_list arg);
+int print_rot13(va_list arg);
+int print_rev(va_list arg);
+int print_base16_upper_lower(va_list arg, char *representation);
+int loop_format(va_list arg, const char *string);
+int call_function_manager(char aux, va_list arg);
+int check_percent(int *flag, char aux);
 #endif
