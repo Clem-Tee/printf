@@ -28,7 +28,7 @@ It will produce a formatted output
 - Code should use the Betty style. it will be checked using [betty-style.pl](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl) and [betty-doc.pl](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
 - Not allowed to use global variables
 - No more than 5 functions per file
-- The prototypes of all functions should be included in the header file called holberton.h
+- The prototypes of all functions should be included in the header file called main.h
 - All header files should be include guarded
 - Authorized functions and macros:
   - write (man 2 write)
